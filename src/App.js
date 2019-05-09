@@ -10,11 +10,11 @@ import "./App.scss";
 function App() {
   return (
     <div className="container">
-      <div className="class">
+      <div className="class-and-counter">
         <TodoClass />
         <CounterClass />
       </div>
-      <div className="function">
+      <div className="class-and-counter">
         <TodoFunction />
         <CounterFunction />
       </div>

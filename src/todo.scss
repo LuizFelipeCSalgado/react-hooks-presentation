@@ -1,4 +1,9 @@
 .todos-container {
+  height: 50%;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
   .todos-header {
     display: flex;
   }
@@ -13,7 +18,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background-color: rgba(0, 255, 200, 0.2);
+  background-color: rgba(80, 55, 200, 0.6);
   border-radius: 5px;
   margin-bottom: 10px;
 }

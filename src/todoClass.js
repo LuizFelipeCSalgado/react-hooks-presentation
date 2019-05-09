@@ -28,18 +28,19 @@ export default class TodoClass extends Component {
             value={textInputTodo}
           />
           <Button
-            onClick={() =>
-              this.setState({
-                todos: [
-                  ...todos,
-                  {
-                    id: (Math.random(1000) * 1000000).toFixed(0),
-                    text: textInputTodo
-                  }
-                ],
-                textInputTodo: ""
-              })
-            }
+            onClick={() => {
+              if (textInputTodo)
+                this.setState({
+                  todos: [
+                    ...todos,
+                    {
+                      id: (Math.random(1000) * 1000000).toFixed(0),
+                      text: textInputTodo
+                    }
+                  ],
+                  textInputTodo: ""
+                });
+            }}
           >
             Adicionar
           </Button>
