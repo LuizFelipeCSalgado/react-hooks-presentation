@@ -1,0 +1,33 @@
+.todos-container {
+  .todos-header {
+    display: flex;
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+.todo-item {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: rgba(0, 255, 200, 0.2);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.todo-item > div {
+  margin: auto 0;
+}
+.todo-item > div:hover {
+  transition: all 1s;
+  transform: scale(1.2, 1.2);
+}
+.todo-item > div:active {
+  transition: all 0.2s;
+  transform: scale(0.7, 0.7);
+}
+.todo-item > div > img {
+  cursor: pointer;
+}
